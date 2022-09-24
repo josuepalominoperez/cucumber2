@@ -12,7 +12,7 @@ import pages.loginPage;
 
 public class LoginSteps_POM {
 	
-	WebDriver driver = null;
+/*	WebDriver driver = null;
 	loginPage login;
 	
 	@Given("I open the browser")
@@ -50,6 +50,6 @@ public class LoginSteps_POM {
 		login.checkLogoutIsDisplayed();
 		driver.quit();
 	}
-
+*/
 
 }

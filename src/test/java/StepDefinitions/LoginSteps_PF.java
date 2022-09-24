@@ -9,10 +9,14 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pageFactory.homeLogin_PF;
+import pageFactory.loginPage_PF;
 
-public class LoginSteps {
+public class LoginSteps_PF {
 	
-/*	WebDriver driver = null;
+	WebDriver driver = null;
+	loginPage_PF login;
+	homeLogin_PF home;
 	
 	@Given("I open the browser")
 	public void i_open_the_browser() {
@@ -20,27 +24,33 @@ public class LoginSteps {
 	    driver = new ChromeDriver();
 	    driver.manage().window().maximize();
 	}
+
 	@When("I got to DemoQAWebLoginPage")
 	public void i_got_to_demo_qa_web_login_page() {
 		driver.get("https://demoqa.com/login");
 	    
 	}
+
 	@And("^I enter (.*) and (.*)$")
 	public void i_enter_username_and_password(String username , String password) throws InterruptedException {
-	    driver.findElement(By.id("userName")).sendKeys(username);
+	    login = new loginPage_PF(driver);
+	    login.enterUsername(username);
 	    Thread.sleep(3000);
-	    driver.findElement(By.id("password")).sendKeys(password);
+	    login.enterPassword(password);
 	    Thread.sleep(3000);
 	}
+
 	@And("I clic Login button")
 	public void i_clic_login_button() {
-	    driver.findElement(By.id("login")).click();
+	    login.clickLogin();
 	}
+
 	@Then("I verify the successful login")
 	public void i_verify_the_successful_login() throws InterruptedException {
 		Thread.sleep(3000);
-		driver.findElement(By.id("submit")).click();
+		home = new homeLogin_PF(driver);
+		home.checkLogoutisDisplayed();
 	}
-*/
+
 
 }
