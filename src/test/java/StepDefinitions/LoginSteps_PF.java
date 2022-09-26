@@ -18,7 +18,7 @@ public class LoginSteps_PF {
 	loginPage_PF login;
 	homeLogin_PF home;
 	
-	@Given("I open the browser")
+	@Given("I .... the browser")
 	public void i_open_the_browser() {
 		System.setProperty("webdriver.chrome.driver", "/src/test/resources/Drivers/chromedriver");
 	    driver = new ChromeDriver();

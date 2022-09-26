@@ -12,7 +12,7 @@ import io.cucumber.java.en.When;
 
 public class GoogleSteps {
 	
-	WebDriver driver = null;
+/*	WebDriver driver = null;
 	
 	@Given("I have opened the browser")
 	public void i_have_opened_the_browser() {
@@ -45,4 +45,5 @@ public class GoogleSteps {
 	    driver.findElement(By.partialLinkText("Facebook - Inicia sesión o regístrate")).click();
 	}
 
+*/
 }
